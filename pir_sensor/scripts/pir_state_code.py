@@ -14,8 +14,8 @@ try:
 
 		currentstate = GPIO.input(GPIO_PIR)
 		print (currentstate)
-
+		time.sleep(1)
 except KeyboardInterrupt:
 	print("End")
 
-	
+GPIO.cleanup()	
