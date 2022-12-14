@@ -12,8 +12,8 @@ GPIO.setup(GPIO_PIR, GPIO.IN)
 try: 
 	while True: 
 
-	currentstate = GPIO.input(GPIO_PIR)
-	print (currentstate)
+		currentstate = GPIO.input(GPIO_PIR)
+		print (currentstate)
 
 except KyeboardInterrupt:
 	print("End")
