@@ -15,7 +15,7 @@ try:
 		currentstate = GPIO.input(GPIO_PIR)
 		print (currentstate)
 
-except KyeboardInterrupt:
+except KeyboardInterrupt:
 	print("End")
 
 	
