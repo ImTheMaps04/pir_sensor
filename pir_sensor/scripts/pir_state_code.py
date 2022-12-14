@@ -3,9 +3,9 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BCM)
+GPIO.setmode(GPIO.BOARD)
 
-GPIO_PIR = 7
+GPIO_PIR = 11
 
 GPIO.setup(GPIO_PIR, GPIO.IN)
 
@@ -14,7 +14,9 @@ try:
 
 		currentstate = GPIO.input(GPIO_PIR)
 		print (currentstate)
-		time.sleep(1)
+		
+		time.sleep(0.1)
+		
 except KeyboardInterrupt:
 	print("End")
 
